@@ -1,0 +1,28 @@
+{
+  "development": {
+    "username": "root",
+    "password": "",
+    "database": "clickideia-vini",
+    "host": "localhost",
+    "dialect": "mariadb",
+    "dialectOptions": {
+      "useUTC": false
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": "",
+    "database": "clickideia-vini",
+    "host": "localhost",
+    "dialect": "mariadb",
+    "timezone": "America/Sao_Paulo"
+  },
+  "production": {
+    "username": "root",
+    "password": "",
+    "database": "clickideia-vini",
+    "host": "localhost",
+    "dialect": "mariadb",
+    "timezone": "America/Sao_Paulo"
+  }
+}
