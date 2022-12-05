@@ -24,13 +24,6 @@ cd clickideia-api
 npm install
 ```
 
-Clone o repositório e instale as dependências.
-
-```bash
-git clone https://github.com/vmsb11/clickideia-api.git
-cd clickideia-api
-npm install
-```
 
 ## Configuração do banco de dados
 
