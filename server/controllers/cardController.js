@@ -289,8 +289,22 @@ class CardController {
 
                 //soma o total de geral cards por cada status
                 sumCards += countCards[i].dataValues.countCards;
-                //grava no vetor o total
-                cardsTotal[i] = countCards[i].dataValues.countCards;
+
+                switch(countCards[i].dataValues.status) {
+
+                    case 'TO-DO':
+                        //grava no vetor o total
+                        cardsTotal[0] = countCards[i].dataValues.countCards;
+                    break;
+                    case 'DOING':
+                        //grava no vetor o total
+                        cardsTotal[2] = countCards[i].dataValues.countCards;
+                    break;
+                    case 'DONE':
+                        //grava no vetor o total
+                        cardsTotal[1] = countCards[i].dataValues.countCards;
+                    break;
+                }   
             }
 
             //armazena na última posição do vetor a contagem geral
@@ -301,6 +315,7 @@ class CardController {
         }
         catch(error) {
 
+            //em caso de falha envia uma resposta com o erro ocorrido
             sendErrorMessage(req, res, error, 'CARDS', 'CONTAGEM DE CARDS', 500, 'error', 'Falha ao obter os indicadores de cards, tente novamente mais tarde');
         }
     }
