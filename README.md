@@ -38,7 +38,7 @@ npm install
 Para executar o projeto, execute o comando
 
 ```bash
-nodemon ou npm start
+nodemon
 ```
 
 A API ficará sendo executado na porta 5000.
